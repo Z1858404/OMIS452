@@ -170,7 +170,7 @@ ORDER BY LastName, FirstName, ProjectID;
 SELECT ProjectName, FirstName, LastName, HoursWorked
 FROM Employee AS E JOIN Assignment AS A 
 	ON E.EmployeeNumber = A.EmployeeNumber
-		JOIN PROTECT AS P 
+		JOIN Project AS P 
 			ON A.ProjectID = P.ProjectID
 ORDER BY P.ProjectID, A.EmployeeNumber;
 
