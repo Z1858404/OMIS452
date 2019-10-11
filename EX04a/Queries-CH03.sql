@@ -159,7 +159,7 @@ FROM Project;
 /* Query-CH03-34 by Stephen Chartrand & Jacob Hamilton */
 SELECT(*)
 FROM Project
-WHERE MaxHours > AVG(MaxHours);
+HAVING MaxHours > AVG(MaxHours);
 
 /* Query-CH03-35 by Stephen Chartrand & Jacob Hamilton */
 SELECT ProjectID, ProjectName, MaxHours, (24.50 * MaxHours) AS MaxProjectCost
