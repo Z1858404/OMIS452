@@ -61,7 +61,7 @@ FROM Project;
 --34
 SELECT(*)
 FROM Project
-WHERE MaxHours > AVG(MaxHours);
+HAVING MaxHours > AVG(MaxHours);
 
 --35
 SELECT ProjectID, ProjectName, MaxHours, (24.50 * MaxHours) AS MaxProjectCost
