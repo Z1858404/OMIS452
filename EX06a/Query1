@@ -6,4 +6,4 @@ WHERE HoursWorked >
   (SELECT AVG(HoursWorked)
    FROM assignment
    WHERE EmployeeNumber=a.EmployeeNumber)
-GROUP BY EmployeeNumber
+GROUP BY EmployeeNumber;
